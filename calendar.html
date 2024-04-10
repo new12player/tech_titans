@@ -1,0 +1,47 @@
+ <html>
+    <head>
+        <title>Calendar</title>
+        <link rel="stylesheet" href="style'.css">
+        <link rel="stylesheet" href="evo-calendar.min.css">
+        <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+
+    </head>
+    <body>
+        <div class="hero">
+            <div id="calendar"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+        <script src="evo-calendar.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#calendar').evoCalendar({
+                    calendarEvents:[
+                    {
+                        name:"BREAKFAST",
+                        date:["January/01/2024","December/31/2024"],
+                        type:"event",
+                        color:"light-blue"
+                    },
+                    {
+                        name:"LUNCH",
+                        date:["January/01/2024","December/31/2024"],
+                        type:"holiday",
+                        color:"blue"
+                    },
+                    {
+                        name:"DINNER",
+                        date:["January/01/2024","December/31/2024"],
+                        type:"birthday",
+                        color:"purple"
+                    },
+                ]
+
+                    
+                })
+            })
+
+        </script>
+    </body>
+</html>

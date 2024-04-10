@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home_anushka.css"></style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="home.html"><img src="logo.jpeg" alt="MessCard" style="width: 150px; height: 60px;"></a>
+            </div>
+            <ul>
+                <li><a href="calendar.html">Mess Calander</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mess">
+        <h1>MESS CARD</h1>
+    </div>
+    <div class="background">
+    <div class="box">
+    <div id="student">
+        <button id="student" class="stu" onclick="openWin()" >
+         <h2>STUDENT</h2>
+        </button>
+    </div><br>
+    <div id="incharge">
+        <button id="incharge" class="inc" onclick="openWin()">
+         <h2>MESS INCHARGE</h2>
+        </button>
+    </div>
+    </div>
+</div>
+<script>
+    function openWin() {
+      return window.open("https://localhost:5000");
+    }
+    </script>
+</body>
+</html>
